@@ -9,10 +9,33 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+                cm, mm, in, px, pt, pc
+            Medidas Relativas:
+                em, ex, rem, vw, vh, %
+            obs: 16px geralmente = 1em 
+            */
+            font-size: 1em;
         }
-        h1, h2{
-            font-family: 'Times New Roman', Times, serif;
+        h1{
+            /* podemos trocar isso...
+
+            font-family: 'Work Sans';
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            */
+
+            /* Por isso... */
+            
+            /* shorthand font 
+                font-style -> font-weight-> font-size -> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
         }
+
     </style>
 </head>
 <body>
