@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # => id
+            . => class
+            : => pseudo-class
+            :: => pseudo-element
+            > => clildren (filho)
+        */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.808);
+        color: white;
+        border-radius: 20px;
+      }
+      li {
+        list-style: none;
+      }
+      a:visited {
+        color: rgb(0, 137, 155);
+      }
+      a {
+        color: rgb(0, 59, 148);
+        text-decoration: none;
+      }
+      a:hover {
+        color: black;
+        font-weight: bold;
+      }
+      a:active {
+        color: rgb(0, 24, 54);
+      }
+      a::after {
+        font-size: 12px;
+        content: " [isso é um link]";
+        text-decoration: none;
+        font-weight: normal;
+        color: red;
+      }
+      .especial {
+        font-size: 18px;
+      }
+      .especial::before{
+        content: '☛';
+      }
+      .especial::after{
+        content: '☚';
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a
+          href="https://github.com/otinielsilva"
+          target="_blank"
+        >
+         <img src="img/icone-github.png" alt=""> GitHub</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/otiniel-silva/" target="_blank"
+          ><img src="img/icone-linkedin.png" alt="" /> Linkedin</a
+        >
+      </li>
+      <li>
+        <a href="https://www.instagram.com/otiniel_silva/" target="_blank"
+          ><img src="img/icone-instagram.png" alt="" /> Instagram</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
